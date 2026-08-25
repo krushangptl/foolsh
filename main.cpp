@@ -25,6 +25,14 @@ int main () {
             cout << "Hi! This is The Fool Shell for Wizards" << endl;
             continue;
         }
+
+        if (line == "help"){
+            cout << "Avalible built-in command:" << endl;
+            cout << " exit - Exit the shell" << endl;
+            cout << " tell - Get Message from The Fool Shell" << endl;
+            cout << " help - Help" << endl;
+            cout << "Everything else runs as external command!" << endl;
+        }
     }
     return 0;
 }
