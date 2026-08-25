@@ -1,0 +1,40 @@
+Shell - Middle Man with Attitude
+
+- Take user input
+- Talks to the operating system
+- Runs other programs
+- Show output
+
+What happens when terminal open?
+
+- Terminal start a shell process like bash
+- Shell waits for input
+- Type command
+- Shell create new process
+- That process runs command
+- Shell waits
+- Shall show prompt again
+
+Thing that used
+
+- fork() --> create process
+- exec() --> replace process with new program
+- wait() --> wait for it to finish
+
+If shell is just a program then what does it need?
+
+- loop, so it keep running
+- prompt
+- input reader
+- command parser
+- process creator
+- OS system calls
+
+What shell do?
+
+- Show a prompt
+- Wait for input
+- Execute command
+- Repeat forever
+
+
