@@ -1,5 +1,7 @@
 #include <iostream>
+#include <sstream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -32,6 +34,14 @@ int main () {
             cout << " tell - Get Message from The Fool Shell" << endl;
             cout << " help - Help" << endl;
             cout << "Everything else runs as external command!" << endl;
+        }
+
+        // parse cmd and arguments
+        stringstream ss(line);
+        string arg;
+        vector<string> args;
+        while (ss >> arg) {
+            args.push_back(arg);
         }
     }
     return 0;
