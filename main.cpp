@@ -17,9 +17,13 @@ int main () {
         getline(cin, line);
         if (line.empty())
             continue;
-        if ("exit"){
+        if (line == "exit"){
             cout << "bye ..." << endl;
             break;
+        }
+        if (line == "tell"){
+            cout << "Hi! This is The Fool Shell for Wizards" << endl;
+            continue;
         }
     }
     return 0;
